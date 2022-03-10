@@ -10,6 +10,15 @@ def fizz_buzz_converter(a: int) -> str:
 
 def list_factory(a: int) -> list:
     numbers = []
-    for i in range(1,a+1):
+    for i in range(1, a + 1):
         numbers.append(i)
     return numbers
+
+
+def fizz_buzz_engine(a: int) -> list:
+    numbers = list_factory(a)
+    for i in range(len(numbers)):
+        numbers[i] = fizz_buzz_converter(numbers[i])
+    print(numbers)
+
+
