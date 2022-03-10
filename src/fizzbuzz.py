@@ -9,4 +9,7 @@ def fizz_buzz_converter(a: int) -> str:
 
 
 def list_factory(a: int) -> list:
-    return [a]
+    numbers = []
+    for i in range(1,a+1):
+        numbers.append(i)
+    return numbers

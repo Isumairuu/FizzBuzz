@@ -17,5 +17,5 @@ def test_when_number_is_not_multiple_of_3_5_15_should_return_number():
     assert fizz_buzz_converter(16) == "16"
 
 
-def test_when_given_a_number_return_a_list():
-    assert list_factory(5) == [5]
+def test_when_given_a_number_should_return_a_list_of_all_the_numbers_before():
+    assert list_factory(5) == [1, 2, 3, 4, 5]
