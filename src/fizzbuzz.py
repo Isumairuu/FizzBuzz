@@ -6,3 +6,7 @@ def fizz_buzz_converter(a: int) -> str:
     elif a % 15 == 0:
         return "fizzbuzz"
     return str(a)
+
+
+def list_factory(a: int) -> list:
+    return [a]
