@@ -15,7 +15,7 @@ def list_factory(a: int) -> list:
     return numbers
 
 
-def fizz_buzz_engine(a: int) -> list:
+def fizz_buzz_engine(a: int):
     numbers = list_factory(a)
     for i in range(len(numbers)):
         numbers[i] = fizz_buzz_converter(numbers[i])
